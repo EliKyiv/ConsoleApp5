@@ -11,13 +11,17 @@ static void Main(string[] args) {
 
         string[] Topics = { "C#", "SQL", "QA" };
         John.Courses = Topics;
-
         John.Print();
 
         Array.Resize(ref Topics, Topics.Length + 1);
         Topics[Topics.Length - 1] = "Java";
         John.Courses = Topics;
         John.Print();
+
+        Array.Resize(ref Topics, Topics.Length - 1);
+        John.Courses = Topics;
+        John.Print();
+
     }
 
 }
